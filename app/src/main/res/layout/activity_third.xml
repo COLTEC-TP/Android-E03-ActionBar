@@ -4,22 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufmg.coltec.tp.e04actionbar.MainActivity">
+    tools:context="br.ufmg.coltec.tp.e04actionbar.ThirdActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Clique!"
-        android:id="@+id/btn_main"
-        />
-
+        android:text="Clique aqui de novo!"
+        android:id="@+id/btn2"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Você está na activity principal"
+        android:text="Você está na terceira activity"
         android:textSize="25dp"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        />
 
 </RelativeLayout>

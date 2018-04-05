@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_refresh"
+        android:title="refresh"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item_search"
+        android:title="search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
+
+    <item
+        android:id="@+id/item_settings"
+        android:title="settings"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_about"
+        android:title="about"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_quit"
+        android:title="quit"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_share"
+        android:title="share"
+        android:icon="@drawable/ic_share_white_24dp"
+        app:showAsAction="always"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"/>
+</menu>
