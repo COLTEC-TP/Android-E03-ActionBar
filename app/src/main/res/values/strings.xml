@@ -1,3 +1,4 @@
-<resources>
+<resources>>
     <string name="app_name">E04: ActionBar</string>
+    <string name="logOut"></string>
 </resources>
