@@ -94,10 +94,7 @@ public class ThirdActivity extends AppCompatActivity {
                 dialog.show();
                 return true;
             case R.id.sair:
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
+                finishAffinity();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
