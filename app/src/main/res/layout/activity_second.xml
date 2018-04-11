@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="br.ufmg.coltec.tp.e04actionbar.MainActivity">
+    tools:context="br.ufmg.coltec.tp.e04actionbar.SecondActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,15 +11,15 @@
         android:layout_marginTop="100dp"
         android:textSize="14dp"
         android:textColor="#000"
-        android:text="Esta é a Tela 1,se deseja ir para tela 2,clique no botão"
-       />
+        android:text="Esta é a Tela 2,se deseja ir para tela 3,clique no botão"
+      />
 
 
     <Button
-        android:id="@+id/screen_second"
+        android:id="@+id/screen_third"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Segunda Tela"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:text="Terceira tela" />
 
-</RelativeLayout>
+    </RelativeLayout>
