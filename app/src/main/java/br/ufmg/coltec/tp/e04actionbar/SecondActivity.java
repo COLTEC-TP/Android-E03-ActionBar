@@ -87,26 +87,7 @@ public class SecondActivity extends AppCompatActivity {
 
             // Item quit //
             case R.id.item_quit:
-                // Cria Dialog
-                AlertDialog.Builder alertBuilder2 = new AlertDialog.Builder(this);
-                alertBuilder2.setTitle("Aviso!");
-                alertBuilder2.setMessage("Tem certeza que deseja fechar o aplicativo?");
-                alertBuilder2.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        System.exit(0);
-                    }
-                });
-
-                alertBuilder2.setNegativeButton("Não", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                    }
-                });
-
-
-                AlertDialog dialog2 = alertBuilder2.create();
-                dialog2.show();
+                this.finishAffinity();
                 return true;
         }
 
