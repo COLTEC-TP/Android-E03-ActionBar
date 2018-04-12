@@ -28,31 +28,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // infla menu na tela
-        getMenuInflater().inflate(R.menu.menu, menu);
 
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // recupera id do item selecionado
-        int id = item.getItemId();
-
-        // verifica qual é o botão selecionado com base no id
-        switch (id) {
-            case R.id.action_search:
-                Toast.makeText(this, "Clicou no search", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.action_refresh:
-                Toast.makeText(this, "Clicou no refresh", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.action_settings:
-                Toast.makeText(this, "Clicou no settings", Toast.LENGTH_SHORT).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 }

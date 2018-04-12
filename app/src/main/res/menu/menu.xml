@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <item android:id="@+id/action_refresh"
         android:icon="@drawable/ic_cached_black_24px"
         android:title="refresh"
-        android:showAsAction="always" />
+        app:showAsAction="always" />
 
     <item android:id="@+id/action_search"
         android:icon="@drawable/ic_search_black_24px"
         android:title="search"
-        android:showAsAction="always" />
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
 
 
     <item android:id="@+id/action_share"
         android:icon="@drawable/ic_share_black_24px"
         android:title="share"
-        android:showAsAction="ifRoom"
-        />
+        app:showAsAction="always"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
 
     <item android:id="@+id/action_settings"
         android:icon="@drawable/ic_settings_black_24px"
         android:title="settings"
-        android:showAsAction="never" />
+        app:showAsAction="never" />
 
     <item android:id="@+id/action_about"
         android:icon="@drawable/ic_info_black_24px"
         android:title="about"
-        android:showAsAction="never" />
+        app:showAsAction="never" />
 
     <item android:id="@+id/action_logOut"
         android:icon="@drawable/ic_power_settings_new_black_24px"
-        android:title="@string/logOut"
-        android:showAsAction="never" />
+        android:title="exit"
+        app:showAsAction="never" />
 
 </menu>
