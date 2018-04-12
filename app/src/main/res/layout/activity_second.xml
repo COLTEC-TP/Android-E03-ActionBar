@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufmg.coltec.tp.e04actionbar.MainActivity">
+    tools:context="br.ufmg.coltec.tp.e04actionbar.SecondActivity">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Clique!"
-        android:id="@+id/btn_main"
+        android:text="Você está na segunda activity"
+        android:textSize="25dp"
+        android:id="@+id/lbl_titulo2"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Você está na activity principal"
-        android:textSize="25dp"
-        android:layout_margin="10dp"/>
+        android:layout_below="@id/lbl_titulo2"
+        android:layout_margin="10dp"
+        android:text="Nota: Se você usar o UpNavigation você retorna para a MainActivity, mas se usar o back você volta para a ThirdActivity."/>
 
 </RelativeLayout>
