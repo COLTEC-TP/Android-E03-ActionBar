@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class ThirdActivity extends AppCompatActivity {
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
@@ -21,18 +22,24 @@ public class ThirdActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_layout, menu);
 
-        MenuItem item = menu.findItem(R.id.action_search);
+////////////////////////////////////
+      final   MenuItem item = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) item.getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+// /////////////////////////////////////////       searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        @Override
 
             public boolean onQueryTextSubmit(String s) {
                 Toast.makeText(ThirdActivity.this, "Buscar : " + s, Toast.LENGTH_SHORT).show();
                 return false;
             }
 
+            @Override
             public boolean onQueryTextChange(String s) {
                 return false;
             }
@@ -51,31 +58,31 @@ public class ThirdActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
         switch (id) {
             case R.id.config:
                 Toast.makeText(
-                        this, "Clicou no Configurações", Toast.LENGTH_SHORT).show();
+                        this, "Configurações", Toast.LENGTH_SHORT).show();
                 return true;
             ////////////////////////////
 
             case R.id.action_refresh:
-                Toast.makeText(this, "Clicou no Atualizar", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Atualizar", Toast.LENGTH_SHORT).show();
                 return true;
 
             ////////////////////////////
 
             case R.id.action_share:
-                Toast.makeText(this, "Clicou no Share", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Compartilhar", Toast.LENGTH_SHORT).show();
                 return true;
 
             ////////////////////////////
 
             case R.id.about:
-                Toast.makeText(this, "Clicou no About", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, " Sobre", Toast.LENGTH_SHORT).show();
                 AlertDialog.Builder alertBuilder = new AlertDialog.Builder(ThirdActivity.this);
                 alertBuilder.setTitle("Informções do aplicativo");
                 alertBuilder.setMessage("Desenvolvido Por: Dellareti\nCopyright © Disney");
