@@ -4,25 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufmg.coltec.tp.e04actionbar.SecondActivity">
+    tools:context="br.ufmg.coltec.tp.e04actionbar.ThreeActivity">
 
     <TextView
-        android:id="@+id/tt"
+        android:id="@+id/ttt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Segunda Tela"
-        tools:layout_editor_absoluteX="150dp"
+        android:text="Terceira Tela"
+        tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="0dp" />
-
-    <Button
-        android:id="@+id/botao2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tt"
-        android:text="Terceira tela"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="40dp" />
 
 </RelativeLayout>

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button SegundaTela = findViewById(R.id.botao1);
+        Button SegundaTela = findViewById(R.id.botao1);
 
         SegundaTela.setOnClickListener(new View.OnClickListener() {
             @Override
