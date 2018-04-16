@@ -4,33 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufmg.coltec.tp.e04actionbar.MainActivity">
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Hello World!"-->
-        <!--app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--app:layout_constraintRight_toRightOf="parent"-->
-        <!--app:layout_constraintTop_toTopOf="parent" />-->
+    tools:context="br.ufmg.coltec.tp.e04actionbar.SecondActivity">
 
     <TextView
-        android:id="@+id/t"
+        android:id="@+id/tt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Primeira Tela"
-        tools:layout_editor_absoluteX="151dp"
+        android:text="Segunda Tela"
+        tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/botao1"
+        android:id="@+id/botao2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/t"
-        android:text="Segunda Tela"
+        android:layout_below="@id/tt"
+        android:text="Terceira tela"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="40dp" />
 
