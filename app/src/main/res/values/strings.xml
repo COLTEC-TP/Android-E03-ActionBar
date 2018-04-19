@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">E04: ActionBar</string>
+    <string name="refresh"></string>
+    <string name="search"></string>
+    <string name="share"></string>
+    <string name="configuration"></string>
+    <string name="about"></string>
+    <string name="exit"></string>
 </resources>
