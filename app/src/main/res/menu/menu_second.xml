@@ -11,15 +11,17 @@
     <item
         android:id="@+id/item_buscar"
         android:icon="@drawable/ic_search_black_36dp"
-        android:title="Atualizar"
-        app:showAsAction="always"/>
+        android:title="Buscar"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
 
     <item
         android:id="@+id/item_compartilhar"
         android:icon="@mipmap/ic_launcher_round"
         android:title="Compartilhar"
-        app:showAsAction="ifRoom" />
-
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider" />
+<!-- android.support.v7.widget.ShareActionProvider -->
     <item
         android:id="@+id/item_configurar"
         android:title="Configurações"
