@@ -47,11 +47,12 @@ public class SecondActivity extends AppCompatActivity {
         MenuItem shareItem = menu.findItem(R.id.share);
         ShareActionProvider shareProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
 
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("E04-ActionBar");
-        intent.putExtra(Intent.EXTRA_TEXT, "Texto pra compartilhar");
+        Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
+        whatsappIntent.setType("text/plain");
+        whatsappIntent.setPackage("com.whatsapp");
+        whatsappIntent.putExtra(Intent.EXTRA_TEXT, "E04-ActionBar");
 
-        shareProvider.setShareIntent(intent);
+        shareProvider.setShareIntent(whatsappIntent);
 
 
 
