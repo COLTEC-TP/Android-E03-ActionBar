@@ -1,15 +1,18 @@
 package br.ufmg.coltec.tp.e04actionbar;
 
 
-import android.app.Dialog;
+
 import android.content.DialogInterface;
-import android.support.annotation.NonNull;
+import android.content.Intent;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.ShareActionProvider;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
@@ -27,7 +30,32 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         this.getMenuInflater().inflate(R.menu.menu_second, menu);
+
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) searchItem.getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                Toast.makeText(SecondActivity.this, "Texto de busca: " + query, Toast.LENGTH_LONG).show();
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+
+        MenuItem shareItem = menu.findItem(R.id.action_share);
+        ShareActionProvider shareProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("image/text/plain");
+        shareProvider.setShareIntent(intent);
+
         return super.onCreateOptionsMenu(menu);
+
     }
 
     @Override
