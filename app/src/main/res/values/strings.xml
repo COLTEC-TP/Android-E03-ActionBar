@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">E04: ActionBar</string>
+    <string name="string_first_activity">First Activity</string>
+    <string name="string_second_activity">Second Activity</string>
+    <string name="string_third_activity">Third Activity</string>
+    <string name="string_btn_first_activity_second">Go To Second Activity</string>
+    <string name="string_btn_first_activity_third">Go To Third Activity</string>
+    <string name="string_btn_third_activity">Go To Second Activity</string>
+    <string name="string_refresh">Atualizar</string>
+    <string name="string_search">Buscar</string>
+    <string name="string_share">Compartilhar</string>
+    <string name="string_settings">Configurações</string>
+    <string name="string_about">Sobre</string>
+    <string name="string_exit">Sair</string>
 </resources>
