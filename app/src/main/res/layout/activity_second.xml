@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.ufmg.coltec.tp.e04actionbar.MainActivity">
+    tools:context=".SecondActivity">
 
     <Button
-        android:id="@+id/btnSecond"
+        android:id="@+id/btnThird"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next Activity"
@@ -17,13 +17,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Activity"
+        android:text="Second Activity"
         android:textSize="24dp"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btnSecond"
+        app:layout_constraintBottom_toTopOf="@+id/btnThird"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
